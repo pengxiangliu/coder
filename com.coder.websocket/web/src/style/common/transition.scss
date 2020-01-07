@@ -1,0 +1,62 @@
+.animation {
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-duration: 0.3s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-duration: 0.3s;
+    -ms-animation-delay: 0s;
+    -ms-animation-iteration-count: 1;
+}
+.animation-fast {
+    animation-duration: 0.1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-duration: 0.1s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-duration: 0.1s;
+    -ms-animation-delay: 0s;
+    -ms-animation-iteration-count: 1;
+}
+.animation-slow {
+    animation-duration: 0.6s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-duration: 0.6s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-duration: 0.6s;
+    -ms-animation-delay: 0s;
+    -ms-animation-iteration-count: 1;
+}
+@mixin transition($property:all, $duration:.3s, $function:ease, $delay:0s) {
+    transition: #{$property} #{$duration} #{$function} #{$delay};
+    will-change: #{$property};
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+@mixin transform($x1:0, $y1:0, $z1:0, $x2:1, $y2:1, $z2:2) {
+    transform: scale3d($x2, $y2, $z2) translate3d($x1, $y1, $z1);
+    -webkit-transform: scale3d($x2, $y2, $z2) translate3d($x1, $y1, $z1);
+    -moz-transform: scale3d($x2, $y2, $z2) translate3d($x1, $y1, $z1);
+    -ms-transform: scale3d($x2, $y2, $z2) translate3d($x1, $y1, $z1);
+}
+@mixin opacity($v) {
+    opacity: $v;
+    -webkit-opacity: $v;
+    -moz-opacity: $v;
+    -ms-opacity: $v;
+}

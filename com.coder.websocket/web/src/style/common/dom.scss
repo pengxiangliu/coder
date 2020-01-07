@@ -1,0 +1,110 @@
+@import "./color.scss";
+@mixin fill-parent($posisition:absolute) {
+    position: $posisition;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+* {
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+//  text-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+body {
+    margin: 0;
+}
+
+input{
+    moz-user-select: -moz-user-select;
+    -moz-user-select: text;
+    -o-user-select:text;
+    -khtml-user-select:text;
+    -webkit-user-select:text;
+    -ms-user-select:text;
+    user-select:text;
+}
+textarea{
+    moz-user-select: -moz-user-select;
+    -moz-user-select: text;
+    -o-user-select:text;
+    -khtml-user-select:text;
+    -webkit-user-select:text;
+    -ms-user-select:text;
+    user-select:text;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.3rem;
+    color: $dr-color-6;
+}
+h2 {
+    font-size: 1.2rem;
+    color: $dr-color-6;
+}
+h3 {
+    font-size: 1.1rem;
+    color: $dr-color-6;
+}
+h4 {
+    font-size: 1rem;
+    color: $dr-color-6;
+}
+
+h5 {
+    font-size: 0.95rem;
+    color: $dr-color-6;
+}
+
+h6 {
+//  font-size: 12px;
+    font-size: 0.85rem;
+    color: $dr-color-6;
+}
+
+p {
+//  font-size:12px;
+    font-size: 0.9rem;
+    color: $dr-color-5;
+}
+
+a{
+    text-decoration:none;
+}
+
+a .mint-cell .mint-field{
+    .mint-cell-wrapper{
+        background: rgba(0,0,0,0);
+        .mint-cell-title{
+            .mint-cell-text{
+                color: #F00 !important;
+            }
+        }
+    }
+}
+/**
+ * 提示窗，按钮
+ */
+.comfirm-btn{
+    background: $dr-color-11 !important;
+    color: #fff !important;;
+    boder:none;
+    font-size: 1rem;
+}
+

@@ -1,0 +1,132 @@
+/*modify mint-ui*/
+.mint-field{
+	margin-top:0.5rem;
+	background: rgba(0,0,0,0);
+}
+.mint-field>.mint-cell-wrapper{
+	background: #fff;
+	padding-left:1rem;
+	background-image: linear-gradient(180deg,#fff,#fff 0%,transparent 0);
+	background-image: -webkit-linear-gradient(top,#fff,#fff 0%,transparent 0);
+}
+.mint-field>.mint-cell-wrapper>.mint-cell-title{
+	width: 90px;
+}
+.mint-field>.mint-cell-wrapper>.mint-cell-title>.mint-cell-text{
+	color: #533;
+	font-size: 14px;
+}
+.mint-field>.mint-cell-wrapper>.mint-cell-value>.mint-field-core{
+	background: rgba(0,0,0,0);
+	font-size: 15px;
+	color: #533;
+}
+/*.mint-field>.mint-cell-wrapper>.mint-cell-value>.mint-field-core :disabled{
+	color: #877;
+}*/
+/*主导航排版*/
+.mint-tab-item-icon {
+	margin: 0 auto 2px !important;
+}
+/*所有header样式*/
+.mint-header{
+	/*background: #ffdb3b !important;*/
+	color: #343434 !important;
+	font-size: 18px !important;
+	height: 44px !important;
+}
+.mint-header-title{
+	color: #444343 !important;
+	line-height: 1.2rem;
+	font-weight: 500 !important;
+}
+
+/*所有mint-navbar样式 */
+.mint-navbar{
+	height: 45px !important;
+}
+.mint-navbar .mint-tab-item.is-selected {
+    border-bottom: 2px solid #533 !important;
+    color: #533 !important;
+    margin-bottom: 0px !important;
+}
+.mint-navbar .mint-tab-item.is-selected h6{
+	color: #533 !important;
+	font-weight: 600  !important;
+}
+
+/*所有mint-cell样式调整*/
+.mint-cell{
+	margin-top: 0.5rem;
+}
+.mint-cell-wrapper{
+	background-image: -webkit-linear-gradient(top,#fff,#fff 50%,transparent 0) !important;
+    background-image: linear-gradient(180deg,#fff,#fff 50%,transparent 0) !important;
+    padding: 0 1rem !important;
+}
+.mint-cell-text{
+	color: #533 !important;
+	font-size: 14px !important;
+}
+.picker-selected{
+	color:#F9B15C !important;
+	/*border-top:1px solid #f00 !important;*/
+	background: rgba(0,0,0,0.05);
+}
+
+/*修改原生switch样式*/
+.mint-switch-input:checked+.mint-switch-core {
+    border-color: #37B0A9 !important;
+    background-color: #37B0A9 !important;
+}
+
+/*修改messagebox中的样式*/
+.mint-msgbox{
+	background: #fff !important;
+	border-radius: 5px !important;
+    width: 80% !important;
+}
+.mint-msgbox-title{
+	font-size: 1.3rem !important;
+	color: #DB763A !important;
+	font-weight: 400 !important;
+}
+.mint-msgbox .mint-msgbox-header{
+	padding-top: 1.5rem;
+}
+.mint-msgbox .mint-msgbox-content{
+	padding: 1.5rem 2rem 2rem 2rem !important;
+	border-bottom: none !important;
+}
+.mint-msgbox .mint-msgbox-content .mint-msgbox-message{
+	color: #aaa !important;
+}
+.mint-msgbox .mint-msgbox-btns{}
+.mint-msgbox .mint-msgbox-btns .mint-msgbox-cancel{
+	color: #aaa;
+	border-right: none;
+	font-size: 1.1rem;
+}
+.mint-msgbox .mint-msgbox-btns .mint-msgbox-confirm{
+	color: #444;
+	/*background: #fcbd00;*/
+	border-left: 1px solid #ddd;
+	font-size: 1.1rem;
+}
+
+.mint-msgbox-message{
+    line-height: 1.5rem !important;
+    color: $dr-color-5 !important;
+}
+
+.mint-button{
+	border: none !important;
+}
+.mint-button:after{
+	background: rgba(0,0,0,0.1) !important;
+}
+.mint-button-text{
+	display: initial !important;
+}
+
+
